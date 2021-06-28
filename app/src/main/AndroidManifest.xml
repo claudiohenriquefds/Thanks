@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Thanks">
+        <activity android:name=".Activity.Transactions"></activity>
+        <activity android:name=".Activity.Solicitations" />
+        <activity android:name=".Activity.Register" />
+        <activity android:name=".Activity.Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
