@@ -20,29 +20,59 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:text="Natal solidário"
             android:textColor="@color/purple_1"
             android:textSize="30dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realizar um natal solidário a crianças carentes."
+            android:textColor="@color/purple_1"
+            android:textSize="15dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Natal solidário"
+            android:text="Este ano, a realização contara com a participação das
+            crianças da casa vida. São no total 10 crianças que estariam felizes com nosso beneficiamento."
             android:textColor="@color/purple_1"
-            android:textSize="30dp" />
+            android:textSize="15dp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Agradeço a colaboração de todos. Paz e Bem."
+            android:textColor="@color/purple_1"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Criado por: Uênio Viana"
+            android:textColor="@color/purple_1"
+            android:textSize="15dp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="362dp"
-        android:layout_height="200dp"
+        android:layout_width="360dp"
+        android:layout_height="177dp"
         android:background="#FFFFFF"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="24dp"
         tools:layout_editor_absoluteY="502dp">
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="#F56438"
+            android:text="Doar agora"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
