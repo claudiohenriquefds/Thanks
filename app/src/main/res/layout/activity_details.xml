@@ -44,7 +44,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:text="Agradeço a colaboração de todos. Paz e Bem."
             android:textColor="@color/purple_1"
             android:textSize="15dp" />
@@ -52,7 +51,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:text="Criado por: Uênio Viana"
             android:textColor="@color/purple_1"
             android:textSize="15dp" />
@@ -65,6 +63,13 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="24dp"
         tools:layout_editor_absoluteY="502dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metodo de pagamento: PIX"
+            android:textColor="@color/purple_1"
+            android:textSize="15dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
