@@ -65,9 +65,28 @@ public class User extends SQLiteOpenHelper {
         return true;
     }
 
-    public int getUser(String email, String password){
+    public com.dm.thanks.Model.User get(String email, String password){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("select * from users where email = ? and password = ?", new String[]{email, password});
-        return 1;
+        cursor.moveToFirst();
+        return new com.dm.thanks.Model.User(
+                cursor.getInt(cursor.getColumnIndex("id")),
+                cursor.getString(cursor.getColumnIndex("name")),
+                cursor.getString(cursor.getColumnIndex("email")),
+                cursor.getInt(cursor.getColumnIndex("level_access"))
+        );
+    }
+
+    public void createAdmin(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("select id from users where email = ? and password = ?", new String[]{"admin@thanks.com", "admin123"});
+        if(cursor.getCount() <= 0){
+            ContentValues contentValues = new ContentValues();
+            contentValues.put("name", "Admin");
+            contentValues.put("email", "admin@thanks.com");
+            contentValues.put("password", "admin");
+            contentValues.put("level_access", 2);
+            db.insert("users", null, contentValues);
+        }
     }
 }
