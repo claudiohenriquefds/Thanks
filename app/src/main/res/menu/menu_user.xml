@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Solicitações"
+        android:icon="@drawable/ic_solicitations"
+        android:contentDescription="Solicitações"/>
+
+    <item
+        android:id="@+id/menu_stock"
+        android:title="Transações"
+        android:icon="@drawable/ic_transactions"
+        android:contentDescription="Transações"/>
+</menu>
